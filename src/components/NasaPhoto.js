@@ -21,7 +21,7 @@ const NasaPhoto = () => {
                 {photoData.media_type === "image" ?
                 (<img src={photoData.url} alt={photoData.title} className="photo" />) :
                 (<iframe title="spase-video" src={photoData.url} frameBorder="0" gesture="media" allow="encrypted-media" allowFullScreen className="photo" />)}
-                <div>
+                <div class="info">
                     <h1>{photoData.title}</h1>
                     <p className="date">{photoData.date}</p>
                     <p className="explanation">{photoData.explanation}</p>
